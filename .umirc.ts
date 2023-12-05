@@ -1,7 +1,9 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
-  antd: {},
+  antd: {
+    theme: { token: { colorPrimary: 'red' } },
+  },
   access: {},
   model: {},
   initialState: {},
@@ -9,6 +11,7 @@ export default defineConfig({
   layout: {
     title: '@umijs/max',
   },
+  // theme: { colorPrimary: 'red' },
   routes: [
     {
       path: '/',
@@ -32,4 +35,3 @@ export default defineConfig({
   ],
   npmClient: 'yarn',
 });
-
